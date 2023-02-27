@@ -21,6 +21,7 @@
       {"source": "The Matrix", "target": "Keanu Reeves", "value": 3},
       {"source": "The Matrix", "target": "Kung fu", "value": 3},
       {"source": "The Matrix", "target": "The Matrix Revolutions", "value": 3}, 
+      {"source": "The Matrix", "target": "Equilibrium", "value": 3},
       {"source": "The Matrix", "target": "The Thirteenth Floor", "value": 2},
       {"source": "The Matrix", "target": "Inception", "value": 2},
       {"source": "The Matrix", "target": "Matrix defense", "value": 2},
