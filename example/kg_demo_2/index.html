@@ -38,23 +38,9 @@
         return new CSS2DObject(nodeEl);
       })
       .nodeThreeObjectExtend(true)
-      .linkThreeObjectExtend(true)
-      .linkThreeObject(link => {
-        // extend link with text sprite
-        const sprite = new SpriteText(`${link.source} > ${link.target}`);
-        sprite.color = 'lightgrey';
-        sprite.textHeight = 1.5;
-        return sprite;
-      })
-      .linkPositionUpdate((sprite, { start, end }) => {
-        const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
-          [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
-        })));
-
-        // Position sprite
-        Object.assign(sprite.position, middlePos);
-      });
-
+      .linkDirectionalParticles("value")
+      .linkDirectionalParticleSpeed(d => d.value * 0.005);
+      
   // Spread nodes a little wider
   Graph.d3Force('charge').strength(-120);
     
