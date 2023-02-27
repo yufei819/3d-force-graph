@@ -1,16 +1,32 @@
 {
     "nodes": [
       {"id": "The Matrix", "group": 1, "size": 12},
-      {"id": "Artificial Intelligence", "group": 3, "size": 10},
-      {"id": "Science Fiction", "group": 3, "size": 9},
-      {"id": "Virtual Reality", "group": 3, "size": 8},
-      {"id": "Keanu Reeves", "group": 3 "size": 5}
+      {"id": "Artificial Intelligence", "group": 2, "size": 10},
+      {"id": "Science Fiction", "group": 2, "size": 9},
+      {"id": "Virtual Reality", "group": 2, "size": 8},
+      {"id": "Keanu Reeves", "group": 2 "size": 5},
+      {"id": "Kung fu", "group": 2, "size": 5}, 
+      {"id": "The Matrix Revolutions", "group": 3, "size": 6},
+      {"id": "Equilibrium", "group": 3, "size": 5},
+      {"id": "The Thirteenth Floor", "group": 3, "size": 3},
+      {"id": "Inception", "group": 3, "size": 3},
+      {"id": "Matrix defense", "group": 4, "size": 6},
+      {"id": "Niobe", "group": 4, "size": 3},
+      {"id": "Zucchini Sushi", "group": 4, "size": 2}
     ],
     "links": [
       {"source": "The Matrix", "target": "Artificial Intelligence", "value": 5},
       {"source": "The Matrix", "target": "Science Fiction", "value": 4},
       {"source": "The Matrix", "target": "Virtual Reality", "value": 4},
-      {"source": "The Matrix", "target": "Keanu Reeves", "value": 3}
+      {"source": "The Matrix", "target": "Keanu Reeves", "value": 3},
+      {"source": "The Matrix", "target": "Kung fu", "value": 3},
+      {"source": "The Matrix", "target": "The Matrix Revolutions", "value": 3}, 
+      {"source": "The Matrix", "target": "Equilibrium", "value": 3},
+      {"source": "The Matrix", "target": "The Thirteenth Floor", "value": 2},
+      {"source": "The Matrix", "target": "Inception", "value": 2},
+      {"source": "The Matrix", "target": "Matrix defense", "value": 2},
+      {"source": "The Matrix", "target": "Niobe", "value": 1},
+      {"source": "The Matrix", "target": "Zucchini Sushi", "value": 1}
     ]
   }
   
