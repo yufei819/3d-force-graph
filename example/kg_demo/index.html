@@ -34,7 +34,7 @@
         const nodeEl = document.createElement('div');
         nodeEl.textContent = node.id;
         nodeEl.style.color = node.color;
-        nodeEl.style.size = node.size;
+        nodeEl.radius = node.val;
         nodeEl.className = 'node-label';
         return new CSS2DObject(nodeEl);
       })
