@@ -19,7 +19,7 @@
     const N = 300;
     const rawData = jsonUrl('../datasets/kg_the_matrix.json');
     const gData = {
-      const nodes = rawData.nodes.map(node => ({ id: node.id, collapsed: node.id !== rootId, childLinks: [] })),
+      const nodes = rawData.nodes.map(node => ({ id: node.id, collapsed: node.id !== rootId, childLinks: [] }));
       const links = rawData.links;
     };
 
