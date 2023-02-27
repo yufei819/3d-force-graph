@@ -34,10 +34,13 @@
         const nodeEl = document.createElement('div');
         nodeEl.textContent = node.id;
         nodeEl.style.color = node.color;
+        nodeEl.val = node.val;
         nodeEl.className = 'node-label';
         return new CSS2DObject(nodeEl);
       })
       .nodeThreeObjectExtend(true)
+      .linkDirectionalParticles("value")
+      .linkDirectionalParticleSpeed(d => d.value * 0.001);
     ;
   </script>
 </body>
