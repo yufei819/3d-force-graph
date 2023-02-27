@@ -14,7 +14,15 @@
 
   <script>
     const rootId = "The Matrix";
-    const gData = require('../datasets/kg_the_matrix.json');
+    const gData = {
+      nodes: [
+         {"id": "The Matrix", "group": 1, "val": 10},
+         {"id": "Artificial Intelligence", "group": 2, "val": 8},
+      ],
+      links: [
+        {"source": "The Matrix", "target": "Artificial Intelligence", "value": 8}
+      ]
+    };
     gData.nodes.forEach(node => {
       node.collapsed = node.id !== rootId;
     });
