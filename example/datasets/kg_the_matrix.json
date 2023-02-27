@@ -10,10 +10,10 @@
       {"id": "Kung fu", "group": 4}
     ],
     "links": [
-      {"source": "The Matrix", "target": "Artificial Intelligence", "value": 1},
+      {"source": "The Matrix", "target": "Artificial Intelligence", "value": 7},
       {"source": "The Matrix", "target": "Virtual Reality", "value": 8},
       {"source": "The Matrix", "target": "Science Fiction", "value": 10},
-      {"source": "The Matrix", "target": "Keanu Reeves", "value": 6},
+      {"source": "The Matrix", "target": "Keanu Reeves", "value": 4},
       {"source": "The Matrix", "target": "Niobe", "value": 1},
       {"source": "The Matrix", "target": "The Matrix Revolutions", "value": 1},
       {"source": "The Matrix", "target": "Kung fu", "value": 1}
