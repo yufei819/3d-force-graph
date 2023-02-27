@@ -85,7 +85,7 @@
       })
       .nodeThreeObjectExtend(true)
       .linkDirectionalParticles("value")
-      .linkDirectionalParticleSpeed(d => d.value * 0.003);
+      .linkDirectionalParticleSpeed(d => d.value * 0.003)
       .onNodeHover(node => elem.style.cursor = node && node.childLinks.length ? 'pointer' : null)
       .onNodeClick(node => {
         if (node.childLinks.length) {
