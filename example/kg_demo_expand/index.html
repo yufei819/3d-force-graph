@@ -14,14 +14,13 @@
 
   <script>
     const rootId = "The Matrix";
-
-    // Random tree
-    const N = 300;
-    const rawData = jsonUrl('../datasets/kg_the_matrix.json');
-    const gData = {
-      const nodes = rawData.nodes.map(node => ({ id: node.id, collapsed: node.id !== rootId, childLinks: [] }));
-      const links = rawData.links;
-    };
+    const gData = require('../datasets/kg_the_matrix.json');
+    gData.nodes.forEach(node => {
+      node.collapsed = node.id !== rootId;
+    });
+    gData.nodes.forEach(node => {
+      node.childLinks = {};
+    });
 
     // link parent/children
     const nodesById = Object.fromEntries(gData.nodes.map(node => [node.id, node]));
