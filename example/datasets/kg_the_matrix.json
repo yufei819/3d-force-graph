@@ -4,7 +4,7 @@
       {"id": "Artificial Intelligence", "group": 3, "size": 10},
       {"id": "Science Fiction", "group": 3, "size": 9},
       {"id": "Virtual Reality", "group": 3, "size": 8},
-      {"id": "Keanu Reeves", "group": 2 "size": 5},
+      {"id": "Keanu Reeves", "group": 3 "size": 5},
       {"id": "Kung fu", "group": 3, "size": 5}, 
       {"id": "The Matrix Revolutions", "group": 2, "size": 6},
       {"id": "Equilibrium", "group": 2, "size": 5},
@@ -12,7 +12,7 @@
       {"id": "Inception", "group": 2, "size": 3},
       {"id": "Matrix defense", "group": 5, "size": 6},
       {"id": "Niobe", "group": 5, "size": 3},
-      {"id": "Zucchini Sushi", "group": 5, "size": 2},
+      {"id": "Zucchini Sushi", "group": 5, "size": 2}
     ],
     "links": [
       {"source": "The Matrix", "target": "Artificial Intelligence", "value": 5},
