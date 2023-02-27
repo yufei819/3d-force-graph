@@ -69,12 +69,23 @@
 
       return { nodes: visibleNodes, links: visibleLinks };
     };
-
+    
     const elem = document.getElementById('3d-graph');
-    const Graph = ForceGraph3D()(elem)
+    const Graph = ForceGraph3D({
+      extraRenderers: [new CSS2DRenderer()]
+    })(elem)
       .graphData(getPrunedTree())
-      .linkDirectionalParticles(2)
       .nodeColor(node => !node.childLinks.length ? 'green' : node.collapsed ? 'red' : 'yellow')
+      .nodeThreeObject(node => {
+        const nodeEl = document.createElement('div');
+        nodeEl.textContent = node.id;
+        nodeEl.style.color = node.color;
+        nodeEl.className = 'node-label';
+        return new CSS2DObject(nodeEl);
+      })
+      .nodeThreeObjectExtend(true)
+      .linkDirectionalParticles("value")
+      .linkDirectionalParticleSpeed(d => d.value * 0.003);
       .onNodeHover(node => elem.style.cursor = node && node.childLinks.length ? 'pointer' : null)
       .onNodeClick(node => {
         if (node.childLinks.length) {
