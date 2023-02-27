@@ -16,11 +16,29 @@
     const rootId = "The Matrix";
     const gData = {
       nodes: [
-         {"id": "The Matrix", "group": 1, "val": 10},
-         {"id": "Artificial Intelligence", "group": 2, "val": 8},
+        {"id": "The Matrix", "group": 1, "val": 10},
+        {"id": "Artificial Intelligence", "group": 2, "val": 8},
+        {"id": "Virtual Reality", "group": 2, "val": 7},
+        {"id": "Science Fiction", "group": 2, "val": 7},
+        {"id": "Keanu Reeves", "group": 2, "val": 4},
+        {"id": "Kung fu", "group": 2, "val": 2},
+        {"id": "The Matrix Revolutions", "group": 3, "val": 5},
+        {"id": "Inception", "group": 3, "val": 5},
+        {"id": "Equillibrium", "group": 3, "val": 4},
+        {"id": "Niobe", "group": 4, "val": 2},
+        {"id": "Zucchini Sushi", "group": 4, "val": 1} 
       ],
       links: [
-        {"source": "The Matrix", "target": "Artificial Intelligence", "value": 8}
+        {"source": "The Matrix", "target": "Artificial Intelligence", "value": 8},
+        {"source": "The Matrix", "target": "Virtual Reality", "value": 7},
+        {"source": "The Matrix", "target": "Science Fiction", "value": 7},
+        {"source": "The Matrix", "target": "Keanu Reeves", "value": 4},
+        {"source": "The Matrix", "target": "Kung fu", "value": 2},
+        {"source": "The Matrix", "target": "The Matrix Revolutions", "value": 5},
+        {"source": "The Matrix", "target": "Inception", "value": 5},
+        {"source": "The Matrix", "target": "Equillibrium", "value": 4},
+        {"source": "The Matrix", "target": "Niobe", "value": 2},
+        {"source": "The Matrix", "target": "Zucchini Sushi", "value": 1}
       ]
     };
     gData.nodes.forEach(node => {
