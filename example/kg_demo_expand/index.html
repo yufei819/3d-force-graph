@@ -102,7 +102,7 @@
       extraRenderers: [new CSS2DRenderer()]
     })(elem)
       .graphData(getPrunedTree())
-      .nodeColor(node => !node.childLinks.length ? 'green' : node.collapsed ? 'red' : 'yellow')
+      .nodeAutoColorBy('group')
       .nodeThreeObject(node => {
         const nodeEl = document.createElement('div');
         nodeEl.textContent = node.id;
